@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auth Pages</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: #E0ECF8;
+        }
+        .container {
+            display: flex;
+            gap: 20px;
+        }
+        .auth-box {
+            width: 300px;
+            background: white;
+            padding: 25px;
+            border-radius: 20px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        h2 {
+            color: #5A5A89;
+            margin-bottom: 10px;
+        }
+        p {
+            color: #7A7A9A;
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+        .social-login {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 15px;
+        }
+        .social-btn {
+            width: 50px;
+            height: 50px;
+            background: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .social-btn:hover {
+            background: #f1f1f1;
+        }
+        .input-group {
+            margin-bottom: 15px;
+            text-align: left;
+        }
+        .input-group label {
+            display: block;
+            font-weight: bold;
+            color: #555;
+            margin-bottom: 5px;
+        }
+        .input-group input {
+            width: 100%;
+            padding: 12px;
+            border: none;
+            border-radius: 10px;
+            font-size: 16px;
+            background: #f3f3f3;
+            outline: none;
+        }
+        .auth-btn {
+            width: 100%;
+            padding: 12px;
+            background: #6A5ACD;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .auth-btn:hover {
+            background: #5A4ACD;
+        }
+        .bottom-text {
+            margin-top: 15px;
+            font-size: 14px;
+            color: #7A7A9A;
+        }
+        .bottom-text a {
+            color: #6A5ACD;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Welcome Page -->
+        <div class="auth-box">
+            <h2>Welcome</h2>
+            <p>Please login or sign up to continue using our app.</p>
+            <div class="social-login">
+                <div class="social-btn">🔵</div>
+                <div class="social-btn">🐦</div>
+            </div>
+            <p>or login with email</p>
+            <button class="auth-btn">Sign up</button>
+            <p class="bottom-text">You already have an account? <a href="#">Login</a></p>
+        </div>
+        
+        <!-- Signup Page -->
+        <div class="auth-box">
+            <h2>Sign Up</h2>
+            <p>Please register with email or social networks to continue using our app.</p>
+            <div class="social-login">
+                <div class="social-btn">🔵</div>
+                <div class="social-btn">🐦</div>
+            </div>
+            <p>or login with email</p>
+            <form>
+                <div class="input-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Enter your email" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Enter your password" required>
+                </div>
+                <button type="submit" class="auth-btn">Sign Up</button>
+            </form>
+            <p class="bottom-text">Already have an account? <a href="#">Login</a></p>
+        </div>
+        
+        <!-- Login Page -->
+        <div class="auth-box">
+            <h2>Login Now</h2>
+            <p>Please login to continue using our app.</p>
+            <div class="social-login">
+                <div class="social-btn">🔵</div>
+                <div class="social-btn">🐦</div>
+            </div>
+            <p>or login with email</p>
+            <form>
+                <div class="input-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Enter your email" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Enter your password" required>
+                </div>
+                <p class="bottom-text"><a href="#">Forgot Password?</a></p>
+                <button type="submit" class="auth-btn">Login</button>
+            </form>
+            <p class="bottom-text">Don't have an account? <a href="#">Sign up</a></p>
+        </div>
+    </div>
+</body>
+</html>
